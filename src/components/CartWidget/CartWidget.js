@@ -7,7 +7,7 @@ function CartWidget() {
     <>
     <img src={require('../../assets/img/cart.png')} className='cartPng' alt='Cart' /> <Badge pill bg="success" className='badge4'>
     4
-  </Badge>{' '}
+  </Badge>
     </>
     )
 }
