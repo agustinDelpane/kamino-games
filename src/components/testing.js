@@ -1,0 +1,1 @@
+juego.map(prod => <Item key = {prod.id} nombre={prod.nombre} img={prod.img} precio={prod.precio} />)
