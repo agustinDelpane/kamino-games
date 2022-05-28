@@ -1,34 +1,36 @@
 div.divCount{
-    background-color: rgb(253, 205, 102);
-    height: 250px;
-    width: 420px;
+    background-color: gray;
+    height: 124px;
+    width: 335px;
     position: relative;
-    left: 740px;
+    left: 1106px;
+    top: -140px;
+    border: solid black;
 }
 label.labelCount{
-    font-size: 35px;
+    font-size: 20px;
     border: solid black 4px;
     padding: 8px;
     background-color: white;
     font-weight: bold;
     position: relative;
-    left: 111px;
-    top: 30px;
+    left: 92px;
+    top: 10px;
     width: 14%;
 }
 Button.buttonMas{
     position: relative;
-    top: 90px;
-    left: 165px;
-    height: 18%;
+    top: 10px;
+    left: 130px;
+    height: 30%;
     width: 18%;
 }
 Button.buttonMenos{
-    height: 18%;
+    height: 30%;
     width: 18%;
     position: relative;
-    top: 90px;
-    left: -150px;
+    top: 10px;
+    left: -115px;
 }
 Button.buttonReset{
     height: 18%;
@@ -36,9 +38,10 @@ Button.buttonReset{
     position: relative;
     top: 90px;
     left: -107px;
+    visibility: hidden;
 }
 Button.buttonCarrito{
     position: relative;
-    top: 100px;
+    top: 13px;
     width: 82%;
 }

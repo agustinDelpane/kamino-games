@@ -1,0 +1,106 @@
+img.imgW{
+    position: relative;
+    top: 38px;
+    left: -550px;
+    border: solid black;
+    padding: 11px;
+    height: 15%;
+    width: 33%;
+}
+h1.h1D{
+    font-size: 85px;
+    position: absolute;
+    top: 94px;
+    left: 1050px;
+    right: 450px;
+    padding-bottom: 10px;
+    border: solid black 2px;
+    background-color: white;
+}
+p.descD{
+    font-size: 27px;
+    position: absolute;
+    top: 240px;
+    left: 760px;
+    right: 139px;
+    border: solid black;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-top: 45px;
+    background-color: white;
+}
+div.conDiv{
+    background-color: white;
+    position: absolute;
+    top: 567px;
+    left: 760px;
+    right: 885px;
+    bottom: 347px;
+    border: solid black;
+}
+h2.h2D{
+    position: relative;
+    top: 25px;
+    left: -40px;
+}
+p.consolaD{
+    position: absolute;
+    top: 18px;
+    left: 180px;
+    font-size: 30px;
+    font-weight: bold;
+    border: solid black;
+    padding: 3px;
+}
+div.preDiv{
+    background-color: white;
+    border: solid black;
+    position: absolute;
+    top: 567px;
+    left: 1135px;
+    bottom: 347px;
+    right: 510px;
+}
+h2.h2Pre{
+    position: relative;
+    top: 25px;
+    left: -45px;
+}
+p.precioD{
+    position: absolute;
+    top: 21px;
+    left: 155px;
+    font-size: 25px;
+    font-weight: bold;
+    border: solid black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+div.stoDiv{
+    background-color: white;
+    border: solid black;
+    position: absolute;
+    top: 567px;
+    left: 1506px;
+    bottom: 347px;
+    right: 139px;
+}
+h2.h2Stock{
+    position: relative;
+    top: 24px;
+    left: -40px;
+}
+p.stockD{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 178px;
+    top: 20px;
+    border: solid black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
