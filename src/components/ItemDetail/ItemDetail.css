@@ -11,8 +11,8 @@ h1.h1D{
     font-size: 85px;
     position: absolute;
     top: 94px;
-    left: 1050px;
-    right: 450px;
+    left: 800px;
+    right: 200px;
     padding-bottom: 10px;
     border: solid black 2px;
     background-color: white;
@@ -20,7 +20,7 @@ h1.h1D{
 p.descD{
     font-size: 27px;
     position: absolute;
-    top: 240px;
+    top: 325px;
     left: 760px;
     right: 139px;
     border: solid black;
@@ -32,21 +32,21 @@ p.descD{
 div.conDiv{
     background-color: white;
     position: absolute;
-    top: 567px;
+    top: 610px;
     left: 760px;
-    right: 885px;
-    bottom: 347px;
+    right: 821px;
+    bottom: 197px;
     border: solid black;
 }
 h2.h2D{
     position: relative;
-    top: 25px;
-    left: -40px;
+    top: 49px;
+    left: -70px;
 }
 p.consolaD{
     position: absolute;
-    top: 18px;
-    left: 180px;
+    top: 40px;
+    left: 170px;
     font-size: 30px;
     font-weight: bold;
     border: solid black;
@@ -56,19 +56,19 @@ div.preDiv{
     background-color: white;
     border: solid black;
     position: absolute;
-    top: 567px;
+    top: 610px;
     left: 1135px;
-    bottom: 347px;
+    bottom: 197px;
     right: 510px;
 }
 h2.h2Pre{
     position: relative;
-    top: 25px;
+    top: 49px;
     left: -45px;
 }
 p.precioD{
     position: absolute;
-    top: 21px;
+    top: 43px;
     left: 155px;
     font-size: 25px;
     font-weight: bold;
@@ -82,25 +82,25 @@ div.stoDiv{
     background-color: white;
     border: solid black;
     position: absolute;
-    top: 567px;
+    top: 610px;
     left: 1506px;
-    bottom: 347px;
+    bottom: 197px;
     right: 139px;
 }
 h2.h2Stock{
     position: relative;
-    top: 24px;
+    top: 49px;
     left: -40px;
 }
 p.stockD{
     font-size: 25px;
     font-weight: bold;
     position: absolute;
-    left: 178px;
-    top: 20px;
+    left: 168px;
+    top: 45px;
     border: solid black;
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
 }

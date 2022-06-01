@@ -35,3 +35,15 @@ juego.map(prod => <Item key = {prod.id} nombre={prod.nombre} img={prod.img} prec
           background-repeat: no-repeat;
           background-attachment: fixed;*/
 
+          <BrowserRouter />
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/categoria/id:Categoria' element={ <ItemListContainer /> } />
+          </Routes>
+
+
+
+.then (juegos.filter (juego =>{
+  if (idCategoria === undefined) return juego;
+  return juegos.categoria === idCategoria}))
