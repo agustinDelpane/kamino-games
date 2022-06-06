@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount.js';
 import './ItemDetail.css'
+import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ({juego}) => {
+    const [itemCount, setItemCount] = useState(0)
+
+    const onAdd = (qty) => {
+        console.log('¡Has agregado ' + qty + ' al carrito!')
+        setItemCount(qty)
+    }
 
     return(
         <div>
@@ -21,7 +29,13 @@ const ItemDetail = ({juego}) => {
             <h2 className='h2Stock'>Stock:</h2>
             <p className='stockD'> {juego.stock} </p>
         </div>
-        <ItemCount initial={1} stock={juego.stock} />
+
+        {
+            itemCount === 0 
+                ? <ItemCount stock={juego.stock} initial={itemCount} onAdd={onAdd} />
+                : <Link to='/cart'><Button variant="danger">Checkout</Button></Link>
+        }   
+        
         </div>
     )
 }
