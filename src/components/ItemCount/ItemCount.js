@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { Button } from 'react-bootstrap'
 import './ItemCount.css'
+import '../ItemDetail/ItemDetail.js'
 
-const ItemCount = ({initial, stock, onAdd}) => {
-    const [count, setCount] = useState(initial);
+const ItemCount = ({initial, stock, onAdd, count, setCount}) => {
+
 
     const sumarCount =() => {
         if (count < stock) {
@@ -27,9 +28,6 @@ const ItemCount = ({initial, stock, onAdd}) => {
         setCount (initial)
     };
     
-  /*  onAdd=() => {
-        console.log(`¡Felicidades! Agregaste ${count} productos al carrito`) 
-    }*/
 
     const agregar =() => {
         onAdd()

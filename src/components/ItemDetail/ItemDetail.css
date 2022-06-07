@@ -104,3 +104,17 @@ p.stockD{
     padding-left: 8px;
     padding-right: 8px;
 }
+Button.bSC{
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    top: 810px;
+    left: 935px;
+}
+Button.bIC{
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    top: 810px;
+    left: 1276px;
+}
