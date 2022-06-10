@@ -3,13 +3,26 @@ import { useNavigate } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount.js';
 import './ItemDetail.css'
 import { Button } from 'react-bootstrap'
+import { useCart } from '../Cart/CartContext.js';
 
 const ItemDetail = ({juego}) => {
+const {id, nombre, stock, precio, img} = juego
 const [count, setCount] = useState(0);
 const [compra, setCompra] = useState(false);
 const navigate = useNavigate();
+const {addToCart} = useCart()
 const onAdd = () => {
-    setCompra(true)
+    const juego ={
+        id,
+        nombre,
+        stock,
+        precio,
+        img,
+        qty:count
+    }
+    setCompra(true);
+    addToCart(juego);
+
 }
 
 

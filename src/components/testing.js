@@ -46,4 +46,18 @@ juego.map(prod => <Item key = {prod.id} nombre={prod.nombre} img={prod.img} prec
 
 .then (juegos.filter (juego =>{
   if (idCategoria === undefined) return juego;
-  return juegos.categoria === idCategoria}))
+  return juegos.categoria === idCategoria}));
+
+  <div>
+
+  <img src={img} alt={nombre} className='imgCart'/>
+
+  <p>{nombre}</p>
+
+  <p>Cantidad:{qty}</p>
+
+  <p>Precio: {precio}</p>
+
+  <button onClick={()=>deleteJuego(id)}>Borrar producto</button>
+
+</div>
