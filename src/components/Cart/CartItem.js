@@ -19,7 +19,7 @@ const CartItem = ({id, img, nombre, qty, precio}) => {
 
         <p className='qtyCart'>Cantidad:{qty}</p>
 
-        <p className='precioCart'>Precio: {precio}</p>
+        <p className='precioCart'>Precio: ${precio}</p>
 
         </div>
 

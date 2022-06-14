@@ -1,7 +1,7 @@
 export const juegos = [
     { id: '1', 
     nombre: 'DayZ', 
-    precio: '$2000', 
+    precio: 2000, 
     img: require('../assets/img/dayz.png'), 
     className:'dayzPng', 
     consola: 'PC',
@@ -16,7 +16,7 @@ export const juegos = [
 
     { id: '2',
     nombre: 'Mass Effect',
-    precio: '$3500',
+    precio: 3500,
     img: require('../assets/img/me.png'),
     className:'mePng',
     consola: 'XBONE',
@@ -31,7 +31,7 @@ export const juegos = [
 
     { id: '3',
     nombre: 'Star Wars Battlefront 2',
-    precio: '$800',
+    precio: 800,
     img: require('../assets/img/swb2.png'),
     className:'swbPng',
     consola: 'PS4',
@@ -43,7 +43,7 @@ export const juegos = [
     
     { id: '4',
     nombre: 'GTA V',
-    precio: '$500',
+    precio: 500,
     img: require('../assets/img/gtav.png'),
     className:'gtavPng',
     consola: 'PC',
@@ -55,7 +55,7 @@ export const juegos = [
 
     { id: '5',
     nombre: 'Fall Guys',
-    precio: '$700',
+    precio: 700,
     img: require('../assets/img/fallguys.png'),
     className:'fgPng',
     consola: 'Switch',
@@ -67,7 +67,7 @@ export const juegos = [
 
     { id: '6',
     nombre: 'Dark Souls 3',
-    precio: '$1600',
+    precio: 1600,
     img: require('../assets/img/ds3.png'),
     className:'ds3Png',
     consola: 'XBONE',
@@ -79,7 +79,7 @@ export const juegos = [
 
     { id: '7',
     nombre: 'Resident Evil: Village',
-    precio: '$3500',
+    precio: 3500,
     img: require('../assets/img/re8.png'),
     className:'re8Png',
     consola: 'PS4',
@@ -91,7 +91,7 @@ export const juegos = [
 
     { id: '8',
     nombre: 'Age Of Empires 3',
-    precio: '$600',
+    precio: 600,
     img: require('../assets/img/aoe3.png'),
     className:'aoe3Png',
     consola: 'PC',
@@ -103,7 +103,7 @@ export const juegos = [
 
     { id: '9',
     nombre: 'Star Wars: Jedi Fallen Order',
-    precio: '$2000',
+    precio: 2000,
     img: require('../assets/img/jfo.png'),
     className:'jfoPng',
     consola: 'PC',
@@ -115,7 +115,7 @@ export const juegos = [
 
     { id: '10',
     nombre: 'XCOM 2',
-    precio: '$600',
+    precio: 600,
     img: require('../assets/img/xcom.png'),
     className:'xcomPng',
     consola: 'PC',
@@ -127,7 +127,7 @@ export const juegos = [
 
     { id: '11',
     nombre: 'Mortal Kombat 11',
-    precio: '$1200',
+    precio: 1200,
     img: require('../assets/img/mk11.png'),
     className:'mk11Png',
     consola: 'PS4',
@@ -139,7 +139,7 @@ export const juegos = [
 
     { id: '12',
     nombre: 'Halo: MCC',
-    precio: '$2500',
+    precio: 2500,
     img: require('../assets/img/halo.png'),
     className:'haloPng',
     consola: 'XBONE',
@@ -151,7 +151,7 @@ export const juegos = [
 
     {id: '13',
     nombre: 'Zelda BOTW',
-    precio: '$5000',
+    precio: 5000,
     img: require('../assets/img/botw.png'),
     className: 'botwPng',
     consola: 'Switch',
@@ -163,7 +163,7 @@ export const juegos = [
 
     {id: '14',
     nombre: 'Minecraft',
-    precio: '$800',
+    precio: 800,
     img: require('../assets/img/mc.png'),
     className: 'mcPng',
     consola: 'PS4',
@@ -175,7 +175,7 @@ export const juegos = [
 
     {id: '15',
     nombre: 'Fallout: NV',
-    precio: '$350',
+    precio: 350,
     img: require('../assets/img/fnv.png'),
     className: 'fnvPng',
     consola: 'PC',
@@ -187,7 +187,7 @@ export const juegos = [
 
     {id: '16',
     nombre: 'Mario Odyssey',
-    precio: '$5000',
+    precio: 5000,
     img: require('../assets/img/mo.png'),
     className: 'moPng',
     consola: 'Switch',

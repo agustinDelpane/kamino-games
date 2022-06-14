@@ -1,4 +1,4 @@
-import { CartContext, useCart } from "./CartContext"
+import { CartContext } from "./CartContext"
 import { useNavigate } from 'react-router-dom';
 import { useContext } from "react";
 import CartItem from "./CartItem";
@@ -24,6 +24,7 @@ const Cart = () => {
                     {cctx.cartList.map((prod)=><CartItem key ={prod.id} nombre={prod.nombre} img={prod.img} qty={prod.qty} precio={prod.precio} id={prod.id} />)}
 
                     <button onClick={cctx.clear} className='vaciarButton' >Vaciar Carrito</button>
+                    <p className="pTotalPrice">El precio total es: ${cctx.totalPrice()} </p>
 
                 </div>
 
