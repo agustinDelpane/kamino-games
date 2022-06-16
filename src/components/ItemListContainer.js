@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import ItemList from './Item/ItemList'
-import ItemCount from './ItemCount/ItemCount'
 import { Spinner } from 'react-bootstrap';
-import { getJuegos, juegos } from './juegos.js'
+import { getJuegos } from './juegos.js'
 import { useParams } from 'react-router-dom';
+import { firebaseFetch } from './FireBase/firebaseFetch';
 
 
 const ItemListContainer = ({ greet })  => {  
@@ -14,16 +14,10 @@ const ItemListContainer = ({ greet })  => {
 
   useEffect (() => {
     setCargando (true)
-    getJuegos
-    .then ((resp) => {
-      if (idCategoria) {
-        setListaJuegos(resp.filter((juegos) => juegos.categoria === idCategoria))
-      }else {
-        setListaJuegos(resp)
-      }
-    })
-    .catch ((error) => console.log(error))
-    .finally (() => setCargando(false))
+    firebaseFetch(idCategoria)
+      .then(resp => setListaJuegos(resp))
+      .catch ((error) => console.log(error))
+      .finally (() => setCargando(false))
   }, [idCategoria])
   
   console.log(listaJuegos)

@@ -61,3 +61,35 @@ juego.map(prod => <Item key = {prod.id} nombre={prod.nombre} img={prod.img} prec
   <button onClick={()=>deleteJuego(id)}>Borrar producto</button>
 
 </div>
+
+width: 3%;
+position: relative;
+right: -85px;
+
+
+useEffect (() => {
+  setCargando (true)
+  firebaseFetch
+  .then ((resp) => {
+    if (idCategoria) {
+      setListaJuegos(resp.filter((juegos) => juegos.categoria === idCategoria))
+    }else {
+      setListaJuegos(resp)
+    }
+  })
+  .catch ((error) => console.log(error))
+  .finally (() => setCargando(false))
+}, [idCategoria])
+
+
+getJuegos
+.then ((resp) => {
+  if (idProducto) {
+    setJuego(resp.find((juegos) => juegos.id === idProducto))
+  }else {
+    setJuego(resp)
+  }
+})
+.catch ((error) => console.log(error))
+.finally (() => setCargando(false))
+}, [idProducto])

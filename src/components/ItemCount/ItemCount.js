@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Button } from 'react-bootstrap'
 import './ItemCount.css'
 import '../ItemDetail/ItemDetail.js'
