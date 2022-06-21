@@ -8,23 +8,23 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
-    <Navbar.Brand href="/">Kamino Games</Navbar.Brand>
+    <Link to="/" className='navbar-brand'>Kamino Games</Link>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-        <Nav.Link href="/categoria/novedades">Novedades</Nav.Link>
-        <Nav.Link href="/categoria/ofertas">Ofertas</Nav.Link>
-        <Nav.Link href="/categoria/mas-vendidos">Más vendidos</Nav.Link>
+        <Link to="/categoria/novedades" className='nav-link'>Novedades</Link>
+        <Link to="/categoria/ofertas" className='nav-link'>Ofertas</Link>
+        <Link to="/categoria/mas-vendidos" className='nav-link'>Más vendidos</Link>
         <NavDropdown title="Consolas" id="collasible-nav-dropdown">
-            <NavDropdown.Item href='/categoria/PC'>PC</NavDropdown.Item>
-            <NavDropdown.Item href="/categoria/PS4">PS4</NavDropdown.Item>
-            <NavDropdown.Item href="/categoria/xbone">Xbox One</NavDropdown.Item>
-            <NavDropdown.Item href="/categoria/nswitch">Nintendo Switch</NavDropdown.Item>
+            <Link to='/categoria/PC' className='nav-dropdown-item'>PC</Link><br />
+            <Link to="/categoria/PS4" className='nav-dropdown-item'>PS4</Link><br />
+            <Link to="/categoria/xbone" className='nav-dropdown-item'>Xbox One</Link><br />
+            <Link to="/categoria/nswitch" className='nav-dropdown-item'>Nintendo Switch</Link>
         </NavDropdown>
         </Nav>
         <Nav>
-        <Nav.Link href="/categoria/sobre-nosotros">Sobre nosotros</Nav.Link>
-        <Nav.Link href="/categoria/contacto">Contacto</Nav.Link>
+        <Link to="/categoria/sobre-nosotros" className='nav-link'>Sobre nosotros</Link>
+        <Link to="/categoria/contacto" className='nav-link'>Contacto</Link>
         </Nav>
         <Link to='/cart'><CartWidget /></Link>
     </Navbar.Collapse>

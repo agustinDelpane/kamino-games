@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
-import { getJuegos } from '../juegos.js'
 import ItemDetail from './ItemDetail.js'
 import { Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { firestoreFetchOne } from '../FireBase/firebaseFetch.js';
+import { firestoreFetchId } from '../FireBase/firebaseFetch.js';
 
 const ItemDetailContainer = ()  => {  
 
@@ -14,7 +13,7 @@ const ItemDetailContainer = ()  => {
   
     useEffect (() => {
       setCargando (true)
-      firestoreFetchOne(idProducto)
+      firestoreFetchId(idProducto)
       .then(resp => setJuego(resp))
       .catch ((error) => console.log(error))
       .finally (() => setCargando(false))
