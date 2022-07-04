@@ -19,8 +19,6 @@ const ItemListContainer = ({ greet })  => {
       .catch ((error) => console.log(error))
       .finally (() => setCargando(false))
   }, [idCategoria])
-  
-  console.log(listaJuegos)
 
   return (
     <div>

@@ -1,0 +1,108 @@
+form.cOForm{
+    border: solid black 5px;
+    position: relative;
+    left: 33px;
+    top: 40px;
+    padding: 112px;
+    width: 30%;
+    background-color: white;
+}
+input.cONombre{
+    padding: 15px;
+    margin: 15px;
+}
+input.cOEmail1{
+    padding: 15px;
+    margin: 15px;
+}
+input.cOEmail2{
+    padding: 15px;
+    margin: 15px;
+}
+input.cOTelefono{
+    padding: 15px;
+    margin: 15px;
+}
+input.cOSubmit{
+    width: 81%;
+    padding: 16px;
+    margin: 30px;
+    position: relative;
+    top: 32px;
+}
+div.cOItem{
+    border: solid black 5px;
+    position: relative;
+    top: -706px;
+    left: 1000px;
+    width: 42%;
+    background-color: white;
+}
+div.cOCard{
+    border: solid black 5px;
+    margin-bottom: 18px;
+    height: 265px;
+}
+img.imgCO{
+    width: 25%;
+    position: relative;
+    left: -240px;
+    top: 22px;
+}
+h1.h1CO{
+    border: solid black 5px;
+    background-color: white;
+    width: 25%;
+    position: relative;
+    left: 675px;
+    top: 10px;
+}
+h1.nombreCO{
+    font-size: 27px;
+    position: relative;
+    left: 100px;
+    top: -182px;
+}
+p.qtyCO{
+    font-size: 22px;
+    position: relative;
+    left: -16px;
+    top: -161px;
+}
+p.precioCO{
+    position: relative;
+    top: -154px;
+    left: -7px;
+    font-size: 20px;
+}
+p.formPCO{
+    border: solid black;
+    padding: 5px;
+    background-color: mediumspringgreen;
+    font-size: 18px;
+}
+p.pTotalPriceCO{
+    font-weight: bold;
+    font-size: 23px;
+}
+div.compraRealizada{
+    background-color: white;
+    border: solid black 7px;
+    width: 36%;
+    position: relative;
+    top: 60px;
+    left: 565px;
+    height: 275px;
+}
+p.p1COF{
+    padding: 38px;
+}
+p.p2COF{
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+button.bCOF{
+    width: 21%;
+    padding: 8px;
+}

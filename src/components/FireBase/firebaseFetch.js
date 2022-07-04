@@ -27,7 +27,16 @@ export const firestoreFetchId = async (id) => {
           ...docSnap.data()
       }
     } else {
-      // doc.data() will be undefined in this case
       console.log("No such document!");
     }
+}
+
+export const firestoreFetchMV = async () => {
+    let qMV = query(collection(db, "juegos"), where('MV', '==', 'true'), orderBy('nombre'));
+    const querySnapshot = await getDocs(qMV);
+    const dataFromFirestore = querySnapshot.docs.map(document => ({
+        MV: document.MV,
+        ...document.data()
+    }));
+    return dataFromFirestore;
 }

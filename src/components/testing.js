@@ -93,3 +93,15 @@ getJuegos
 .catch ((error) => console.log(error))
 .finally (() => setCargando(false))
 }, [idProducto])
+
+
+const [data, setData] = useState({})
+
+const handleChange = (event) => {
+  const { name, value } = event.target;
+  setData({ ...data, [name]: value });
+}
+
+
+[core]
+	editor = \"C:\\Users\\AgustinPC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
